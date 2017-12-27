@@ -1,0 +1,35 @@
+/*targetRow*/
+.target-row {
+  padding: 20px;
+}
+.target-row > * {
+  margin: 30px;
+}
+.target-row h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: #555555;
+}
+.target-row p {
+  line-height: 16px;
+  font-size: 12px;
+}
+.target-row h3 {
+  font-size: 13px;
+  margin: 10px 0px 10px 0px;
+}
+.target-row h2 {
+  font-size: 18px;
+}
+.target-row img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .target-row {
+    padding: 3px;
+  }
+  .target-row > * {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,34 @@
+/*Navbar */
+.navbar {
+  margin-bottom: 0px !important;
+}
+.navbar-brand {
+  padding: 10px !important;
+  display: flex;
+  cursor: pointer;
+}
+.navbar-brand:hover .navTitle  {
+  color:#808080;
+}
+.navTitle {
+  line-height: 30px;
+  color: white;
+}
+.navLogo {
+  width: 50px;
+}
+.navbar-inverse {
+   background-color: #00416A !important;
+}
+.navbtn {
+  margin: 10px;
+}
+.navbtn a {
+  color: black;
+}
+.navbtn a:hover{
+  text-decoration: none;
+}
+.navbtn a:focus {
+  text-decoration: none;
+}

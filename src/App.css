@@ -1,0 +1,58 @@
+
+
+/*Banner*/
+.banner {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: 60vh;
+
+}
+.banner-title {
+  display: inline-flex;
+  align-items: flex-end;
+  border-bottom: 2px solid white;
+}
+.banner-title h1 {
+  font-size: 70px;
+  font-weight: 900;
+  color: white;
+}
+.banner-img{
+  padding: 10px 10px 10px 0px;
+  width: 100px;
+  height: 100px;
+  fill: white;
+}
+
+
+/*waypoint */
+.scrolling-sub {
+  display: flex;
+  justify-content: center;
+  background-color: #EEEEEE;
+  flex-wrap: wrap;
+}
+a.active .waypoint {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.waypoint {
+  margin: 10px !important;
+}
+.fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+/*custom */
+.form-img {
+  opacity: .5;
+  height: 250px;
+  width: 250px;
+}
