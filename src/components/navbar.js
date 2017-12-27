@@ -26,7 +26,7 @@ export const NavbarInst = (props) => (
         <NavButton href="https://github.com/US-CBP/GTAS/"
           target="_blank" icon="fa fa-github"
           content="Github"/>
-        <NavButton href="#"
+        <NavButton href="http://96.127.76.194:8080/gtas/login.html"
           target="_blank" icon="fa fa-desktop"
           content="Demo Site"/>
       </Nav>

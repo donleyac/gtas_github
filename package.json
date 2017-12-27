@@ -2,7 +2,7 @@
   "name": "gtas_github_pages",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://US-CBP.github.io/GTAS",
+  "homepage" : "https://donleyac.github.io/gtas_github/",
   "dependencies": {
     "antd": "^3.0.2",
     "autoprefixer": "7.1.6",

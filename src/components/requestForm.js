@@ -9,7 +9,6 @@ export class RequestForm extends Component {
       lastName: '',
       country: '',
       organization: '',
-      email: '',
       description: '',
       requestAccess: false
     };
@@ -27,11 +26,20 @@ export class RequestForm extends Component {
   }
 
   handleSubmit(event) {
+    let output = {
+      firstName: "firstName: " + this.state.firstName,
+      lastName: "lastName: " + this.state.lastName,
+      nation: "nation: " + this.state.country,
+      organ: "organization: " + this.state.organization,
+      descrip: "description: " + this.state.description,
+      requestAccess: "Request Access to Demo: " + this.state.requestAccess
+    }
+
     var placeholder = 'mailto:';
-    var receipient = 'donleyac@gmail.com?';
-    var subject = 'subject=GTAS%20Request' + '%20-%20' + String(this.state.firstName) + '%20-%20' + String(this.state.lastName)  + '&';
-    var body = 'body=' + String(this.state.country) +'%0D%0A%0D%0A'+ String(this.state.organization) +'%0D%0A%0D%0A'
-                + String(this.state.description) + '%0D%0A%0D%0A' + String(this.state.requestAccess) + '%0D%0A%0D%0A';
+    var receipient = 'david.j.ertel@gmail.com?';
+    var subject = 'subject=GTAS%20Request' + '%20-%20' + output.firstName + '%20-%20' + output.lastName + '&';
+    var body = 'body=' + output.nation +'%0D%0A%0D%0A'+ output.organ +'%0D%0A%0D%0A'
+                + output.descrip + '%0D%0A%0D%0A' + output.requestAccess + '%0D%0A%0D%0A';
     var link = placeholder + receipient + subject + body;
     window.open(link);
   }
@@ -68,14 +76,6 @@ export class RequestForm extends Component {
           <Input
             label="Your Organization/Agency*"
             name="organization"
-            state={this.state}
-            handleChange={this.handleChange}
-          />
-        </div>
-        <div>
-          <Input
-            label="Your Email*"
-            name="email"
             state={this.state}
             handleChange={this.handleChange}
           />
@@ -138,7 +138,7 @@ const Input = (props) => {
   }
   return(<label style={style}>
     {type!=="textarea"
-      ?(<input style={inputStyle} name={props.name} type={type} value={props.state[props.name]}
+      ?(<input required style={inputStyle} name={props.name} type={type} value={props.state[props.name]}
       onChange={props.handleChange} />)
       :(<textarea style={inputStyle} rows="4" cols="50" name={props.name}
         value={props.state[props.name]} onChange={props.handleChange} />)

@@ -151,11 +151,9 @@ export default class App extends Component {
               message formats. You can learn more about these formats by reviewing the GTAS Technical Guide
               documentation found on our Github page by clicking the link below.</p>
               <div className="flex flex-wrap">
-                <Button bsStyle="primary" className="margin-sm">
+                <Button href="https://github.com/US-CBP/GTAS/"
+                  target="_blank" bsStyle="primary" className="margin-sm">
                   View on Github
-                </Button>
-                <Button bsStyle="primary" className="margin-sm">
-                  Request Demo Access
                 </Button>
               </div>
             </div>
